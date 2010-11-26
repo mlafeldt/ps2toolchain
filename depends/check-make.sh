@@ -1,5 +1,9 @@
 #!/bin/sh
-# check-make.sh by Dan Peori (danpeori@oopo.net)
+# Written by Dan Peori <danpeori@oopo.net>
+# and Mathias Lafeldt <misfire@debugon.org>
 
- ## Check for make.
- make -v 1> /dev/null || { echo "ERROR: Install make before continuing."; exit 1; }
+## Check for make.
+make -v >/dev/null || {
+    echo "ERROR: Install make before continuing."
+    exit 1
+}

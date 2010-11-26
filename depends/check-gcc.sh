@@ -1,5 +1,9 @@
 #!/bin/sh
-# check-gcc.sh by Dan Peori (danpeori@oopo.net)
+# Written by Dan Peori <danpeori@oopo.net>
+# and Mathias Lafeldt <misfire@debugon.org>
 
- ## Check for gcc.
- gcc --version 1> /dev/null || { echo "ERROR: Install gcc before continuing."; exit 1; }
+## Check for gcc.
+gcc --version >/dev/null || {
+    echo "ERROR: Install gcc before continuing."
+    exit 1
+}

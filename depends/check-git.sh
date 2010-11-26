@@ -1,5 +1,9 @@
 #!/bin/sh
-# check-git.sh by Mathias Lafeldt <misfire@debugon.org>
+# Written by Dan Peori <danpeori@oopo.net>
+# and Mathias Lafeldt <misfire@debugon.org>
 
- ## Check for git.
- git --version > /dev/null || { echo "ERROR: Install Git before continuing."; exit 1; }
+## Check for git.
+git --version >/dev/null || {
+    echo "ERROR: Install Git before continuing."
+    exit 1
+}
