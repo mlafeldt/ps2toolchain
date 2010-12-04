@@ -21,4 +21,4 @@ mkdir build-ee-stage2 && cd build-ee-stage2 || exit 1
     --enable-cxx-flags="-G0" || exit 1
 
 ## Compile and install.
-make clean && CFLAGS_FOR_TARGET="-G0" make -j 2 && make install && make clean || exit 1
+make clean && CFLAGS_FOR_TARGET="-G0" make -j 2 && make install || exit 1

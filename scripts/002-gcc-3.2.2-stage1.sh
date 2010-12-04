@@ -22,7 +22,7 @@ for TARGET in ee iop; do
         --enable-languages="c" --with-newlib --without-headers || exit 1
 
     ## Compile and install.
-    make clean && make -j 2 && make install && make clean || exit 1
+    make clean && make -j 2 && make install || exit 1
 
     ## Exit the build directory.
     cd .. || exit 1

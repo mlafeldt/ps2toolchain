@@ -13,4 +13,4 @@ else
 fi
 
 ## Build and install.
-make clean && make && make install && make clean || exit 1
+make clean && make && make install || exit 1
