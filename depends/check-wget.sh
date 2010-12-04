@@ -4,6 +4,6 @@
 
 ## Check for wget.
 wget -V >/dev/null || {
-    echo "ERROR: Install wget before continuing."
+    echo >&2 "ERROR: Install wget before continuing."
     exit 1
 }

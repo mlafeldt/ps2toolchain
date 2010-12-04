@@ -4,6 +4,6 @@
 
 ## Check for make.
 make -v >/dev/null || {
-    echo "ERROR: Install make before continuing."
+    echo >&2 "ERROR: Install make before continuing."
     exit 1
 }

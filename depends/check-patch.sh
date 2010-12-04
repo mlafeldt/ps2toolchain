@@ -4,6 +4,6 @@
 
 ## Check for patch.
 patch -v >/dev/null || {
-    echo "ERROR: Install patch before continuing."
+    echo >&2 "ERROR: Install patch before continuing."
     exit 1
 }

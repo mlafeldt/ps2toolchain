@@ -4,6 +4,6 @@
 
 ## Check for gcc.
 gcc --version >/dev/null || {
-    echo "ERROR: Install gcc before continuing."
+    echo >&2 "ERROR: Install gcc before continuing."
     exit 1
 }

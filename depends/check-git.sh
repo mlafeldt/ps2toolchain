@@ -4,6 +4,6 @@
 
 ## Check for git.
 git --version >/dev/null || {
-    echo "ERROR: Install Git before continuing."
+    echo >&2 "ERROR: Install Git before continuing."
     exit 1
 }
