@@ -3,7 +3,7 @@
 # and Mathias Lafeldt <misfire@debugon.org>
 
 ## Enter the ps2toolchain directory.
-cd "`dirname $0`" || {
+cd "$(dirname $0)" || {
     echo >&2 "ERROR: Could not enter the ps2toolchain directory."
     exit 1
 }
@@ -21,7 +21,7 @@ cd build || {
 }
 
 ## Fetch the depend scripts.
-DEPEND_SCRIPTS=(`ls ../depends/*.sh | sort`)
+DEPEND_SCRIPTS=($(ls ../depends/*.sh | sort))
 
 ## Run all the depend scripts.
 for SCRIPT in ${DEPEND_SCRIPTS[@]}; do
@@ -32,7 +32,7 @@ for SCRIPT in ${DEPEND_SCRIPTS[@]}; do
 done
 
 ## Fetch the build scripts.
-BUILD_SCRIPTS=(`ls ../scripts/*.sh | sort`)
+BUILD_SCRIPTS=($(ls ../scripts/*.sh | sort))
 
 ## If specific steps were requested...
 if [ $1 ]; then

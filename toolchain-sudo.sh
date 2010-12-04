@@ -3,7 +3,7 @@
 # and Mathias Lafeldt <misfire@debugon.org>
 
 ## Enter the ps2toolchain directory.
-cd "`dirname $0`" || {
+cd "$(dirname $0)" || {
     echo >&2 "ERROR: Could not enter the ps2toolchain directory."
     exit 1
 }
